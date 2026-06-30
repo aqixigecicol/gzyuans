@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="News — articles, release notes, and engineering field notes from the gzyuans team." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="News — gzyuans" />
+  <meta property="og:description" content="Articles, release notes, and engineering field notes from gzyuans." />
+  <meta property="og:type" content="website" />
+  <title>News — gzyuans</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300d4ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5z'/%3E%3Cpath d='M2 17l10 5 10-5'/%3E%3Cpath d='M2 12l10 5 10-5'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="nav-logo" aria-label="gzyuans home">
+            <span class="nav-logo-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7b61ff"/></linearGradient></defs>
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </span>
+            <span>gzyuans</span>
+          </a>
+          <ul class="nav-list" id="navList">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="advantages.html" class="nav-link">Advantages</a></li>
+            <li><a href="news.html" class="nav-link active">News</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="contact.html" class="nav-cta magnetic">Get Started
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navList">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="news-hero">
+        <div class="hero-bg" aria-hidden="true"><div class="code-rain" data-count="6"></div></div>
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">News & notes</span>
+            <h1>Writing from the studio.</h1>
+            <p>Release notes, engineering field reports, and the occasional essay on craft, privacy, and the work of building software that respects the people who use it.</p>
+          </div>
+
+          <!-- Tabs -->
+          <div data-tabs class="reveal" style="max-width: 720px; margin: 0 auto;">
+            <div class="tab-list" role="tablist" style="justify-content: center;">
+              <button class="tab-button active" data-tab="all" role="tab" aria-selected="true">All</button>
+              <button class="tab-button" data-tab="releases" role="tab">Releases</button>
+              <button class="tab-button" data-tab="engineering" role="tab">Engineering</button>
+              <button class="tab-button" data-tab="company" role="tab">Company</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="padding-top: 2rem; padding-bottom: 6rem;">
+        <div class="news-grid stagger">
+          <article class="news-card" data-tilt>
+            <div class="news-card-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#n1)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <defs><linearGradient id="n1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7b61ff"/></linearGradient></defs>
+                <circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/>
+              </svg>
+            </div>
+            <span class="news-card-tag">Engineering</span>
+            <div class="news-card-date">June 18, 2026 · 9 min read</div>
+            <h3>On-device inference is finally boring (and that's good news)</h3>
+            <p>After three years of weekly model releases, the on-device story has finally stabilized. We dig into what's actually shippable today, what's still a research demo, and how to think about the build-vs-call decision for privacy-sensitive products.</p>
+            <div class="news-card-footer">
+              <div class="news-card-author"><span class="news-card-avatar">SC</span><span>Sam C. · Engineering</span></div>
+              <span class="news-card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+
+          <article class="news-card" data-tilt>
+            <div class="news-card-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#n2)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <defs><linearGradient id="n2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00ffa3"/><stop offset="100%" stop-color="#00d4ff"/></linearGradient></defs>
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/>
+              </svg>
+            </div>
+            <span class="news-card-tag releases">Releases</span>
+            <div class="news-card-date">June 4, 2026</div>
+            <h3>gzyuans Studio v3.0 — open beta</h3>
+            <p>Our design and engineering toolkit graduates from alpha. Highlights: visual regression in CI, per-token audit logs, and a privacy linter that catches data leaks before review.</p>
+            <div class="news-card-footer">
+              <div class="news-card-author"><span class="news-card-avatar">MK</span><span>Maya K. · Product</span></div>
+              <span class="news-card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+
+          <article class="news-card" data-tilt>
+            <div class="news-card-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#n3)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <defs><linearGradient id="n3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7b61ff"/><stop offset="100%" stop-color="#ff5acf"/></linearGradient></defs>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <span class="news-card-tag engineering">Engineering</span>
+            <div class="news-card-date">May 22, 2026 · 12 min read</div>
+            <h3>A practical guide to threat modeling for small teams</h3>
+            <p>STRIDE is great, but it's also a lot. Here's the lighter-weight process we use with every gzyuans client — four steps, one afternoon, and a list of decisions you'll actually make.</p>
+            <div class="news-card-footer">
+              <div class="news-card-author"><span class="news-card-avatar">DV</span><span>Devi V. · Security</span></div>
+              <span class="news-card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+
+          <article class="news-card" data-tilt>
+            <div class="news-card-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#n4)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <defs><linearGradient id="n4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ffb84c"/><stop offset="100%" stop-color="#ff5a3c"/></linearGradient></defs>
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <span class="news-card-tag company">Company</span>
+            <div class="news-card-date">May 8, 2026</div>
+            <h3>Welcoming three new senior practitioners</h3>
+            <p>We're growing — carefully. Three new teammates joined this quarter, all with backgrounds in privacy-preserving ML, design systems, and platform engineering. Here's what they'll be working on.</p>
+            <div class="news-card-footer">
+              <div class="news-card-author"><span class="news-card-avatar">AT</span><span>Ada T. · Studio</span></div>
+              <span class="news-card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+
+          <article class="news-card" data-tilt>
+            <div class="news-card-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#n5)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <defs><linearGradient id="n5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#00ffa3"/></linearGradient></defs>
+                <path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <span class="news-card-tag engineering">Engineering</span>
+            <div class="news-card-date">April 21, 2026 · 7 min read</div>
+            <h3>Why we still hand-write our database migrations</h3>
+            <p>ORM auto-migrations are great for prototypes and terrible for the next five years. A short post on the discipline of explicit, reversible, reviewed schema changes.</p>
+            <div class="news-card-footer">
+              <div class="news-card-author"><span class="news-card-avatar">JN</span><span>Jules N. · Backend</span></div>
+              <span class="news-card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+
+          <article class="news-card" data-tilt>
+            <div class="news-card-image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#n6)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <defs><linearGradient id="n6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff5acf"/><stop offset="100%" stop-color="#7b61ff"/></linearGradient></defs>
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/>
+              </svg>
+            </div>
+            <span class="news-card-tag releases">Releases</span>
+            <div class="news-card-date">April 3, 2026</div>
+            <h3>Northwind Console goes 1.0</h3>
+            <p>After 14 months of partnership with Northwind, their operator console is now generally available. We share what shipped, what we cut, and what we'd do differently.</p>
+            <div class="news-card-footer">
+              <div class="news-card-author"><span class="news-card-avatar">RP</span><span>Rae P. · Design</span></div>
+              <span class="news-card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="container" style="padding-bottom: 6rem;">
+        <div class="section-header reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Things people<br/>often ask first.</h2>
+        </div>
+
+        <div class="grid grid-2" style="max-width: 920px; margin: 0 auto;">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>How quickly can you start a new engagement?</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">For audit and discovery work, typically within 2 weeks. For embedded team engagements, 4–6 weeks. The slower timeline is by design — we want to make sure we're the right fit before we say yes.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you sign NDAs before scoping work?</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">Yes, mutual NDAs are standard and we sign them same-day. We're comfortable with strict data-handling terms, on-shore-only engineers, and air-gapped environments.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Can you work with our existing stack?</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">Almost always yes. We've shipped in nearly every modern web, mobile, and backend stack. We'll be honest if a piece of your stack is causing more harm than good — but we won't insist on rewriting it for the sake of it.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you take equity as part of payment?</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">Occasionally, for early-stage teams where the work is material to the company's success. We structure it as a fixed-price cash component plus a small equity kicker — never as a substitute for fair compensation.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What's your team structure?</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">Currently 9 senior practitioners, all full-time. No contractors, no offshore bench. Everyone has 8+ years of production experience in their discipline.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>How do you handle handover?</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">We write a written handover document, run a handover week with your team, and stay on call for 30 days post-engagement. The codebase is yours in full — including the design files, the recordings of design crits, and the rationale behind every decision.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-card reveal">
+            <span class="eyebrow" style="justify-content:center">Subscribe</span>
+            <h2>Get our quarterly notes.</h2>
+            <p>Four emails a year. Long-form, no tracking pixels, no "growth hacks." Cancel with a single click from any email.</p>
+            <div class="cta-actions">
+              <form data-newsletter style="display:flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+                <input type="email" required placeholder="you@domain.com" class="form-input" style="min-width: 260px;" />
+                <button type="submit" class="btn btn-primary magnetic">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo" aria-label="gzyuans home">
+              <span class="nav-logo-mark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="url(#gf)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <defs><linearGradient id="gf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7b61ff"/></linearGradient></defs>
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                </svg>
+              </span>
+              <span>gzyuans</span>
+            </a>
+            <p>Privacy-first design and engineering studio. Quietly building software that respects attention, data, and craft.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.55 7.49L22 22h-6.79l-4.74-6.21L4.8 22H2l7.01-8.02L2 2h6.91l4.3 5.69L18.24 2zm-2.38 18h1.86L7.27 4H5.3l10.56 16z"/></svg></a>
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.05-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="#" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72M21.54 15.32c-4.62-1.51-12.66-2.18-18.04 1.07M3.84 7.46c5.4 2.04 12.81 2.34 17.66-.96"/></svg></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Studio</h4>
+            <ul>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="advantages.html">Advantages</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="news.html">Articles</a></li>
+              <li><a href="news.html">Releases</a></li>
+              <li><a href="news.html">Engineering notes</a></li>
+              <li><a href="contact.html">Press kit</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p style="font-size: 0.9375rem; margin-bottom: 1rem;">Quarterly notes on craft, privacy, and what we're building.</p>
+            <form data-newsletter style="display:flex; gap: 0.5rem;">
+              <input type="email" required placeholder="you@domain.com" class="form-input" style="padding: 0.625rem 0.875rem; font-size: 0.875rem;" />
+              <button type="submit" class="btn btn-primary magnetic" style="padding: 0.625rem 1rem; font-size: 0.875rem;">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> gzyuans. All rights reserved.</span>
+          <div class="footer-bottom-links">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html#cookies">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

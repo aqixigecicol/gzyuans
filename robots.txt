@@ -1,0 +1,16 @@
+# gzyuans.com — robots.txt
+# https://gzyuans.com/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://gzyuans.com/sitemap.xml
+
+# Common bots — allow all
+# We use no third-party trackers, so we have no special rules to enumerate.
+
+# Crawl-delay (optional, remove if you want maximum speed)
+# Crawl-delay: 1

@@ -207,3 +207,13 @@
   .btn-arrow:hover { gap: 0.5rem; }
   .btn-arrow:hover svg { transform: none; }
 }
+
+/* ===== Featured grid (index case study + open source) ===== */
+@media (max-width: 960px) {
+  [class*="featured-grid"] { grid-template-columns: 1fr !important; gap: 2rem !important; }
+}
+@media (max-width: 768px) {
+  [style*="aspect-ratio: 16/9"] { aspect-ratio: 16/10; }
+}
+
+
